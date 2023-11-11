@@ -16,6 +16,8 @@
 		3C00947A2AFF25C100D4815D /* Coin_Exchange_Capstone_iOS_DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0094792AFF25C100D4815D /* Coin_Exchange_Capstone_iOS_DevelopmentTests.swift */; };
 		3C0094842AFF25C100D4815D /* Coin_Exchange_Capstone_iOS_DevelopmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0094832AFF25C100D4815D /* Coin_Exchange_Capstone_iOS_DevelopmentUITests.swift */; };
 		3C0094862AFF25C100D4815D /* Coin_Exchange_Capstone_iOS_DevelopmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0094852AFF25C100D4815D /* Coin_Exchange_Capstone_iOS_DevelopmentUITestsLaunchTests.swift */; };
+		3C0094932AFF2A0900D4815D /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0094922AFF2A0900D4815D /* CurrencyViewController.swift */; };
+		3C0094952AFF2CD100D4815D /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0094942AFF2CD100D4815D /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3C00947F2AFF25C100D4815D /* Coin Exchange Capstone iOS DevelopmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coin Exchange Capstone iOS DevelopmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C0094832AFF25C100D4815D /* Coin_Exchange_Capstone_iOS_DevelopmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin_Exchange_Capstone_iOS_DevelopmentUITests.swift; sourceTree = "<group>"; };
 		3C0094852AFF25C100D4815D /* Coin_Exchange_Capstone_iOS_DevelopmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin_Exchange_Capstone_iOS_DevelopmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3C0094922AFF2A0900D4815D /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
+		3C0094942AFF2CD100D4815D /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				3C00946B2AFF25C000D4815D /* Assets.xcassets */,
 				3C00946D2AFF25C000D4815D /* LaunchScreen.storyboard */,
 				3C0094702AFF25C000D4815D /* Info.plist */,
+				3C0094922AFF2A0900D4815D /* CurrencyViewController.swift */,
+				3C0094942AFF2CD100D4815D /* Currency.swift */,
 			);
 			path = "Coin Exchange Capstone iOS Development";
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C0094672AFF25BF00D4815D /* ViewController.swift in Sources */,
+				3C0094952AFF2CD100D4815D /* Currency.swift in Sources */,
+				3C0094932AFF2A0900D4815D /* CurrencyViewController.swift in Sources */,
 				3C0094632AFF25BF00D4815D /* AppDelegate.swift in Sources */,
 				3C0094652AFF25BF00D4815D /* SceneDelegate.swift in Sources */,
 			);
