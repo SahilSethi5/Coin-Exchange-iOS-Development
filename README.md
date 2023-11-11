@@ -46,6 +46,7 @@ Coin Exchange is an app that lets you convert a currency from many different cur
 ### Sprints
 
 * Sprint 1: Set up the project and make basic view controllers.
+* Sprint 2: Can switch to different screens like currencies, profile, and convert.
 
 ### 2. Screen Archetypes
 
