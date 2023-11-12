@@ -23,8 +23,10 @@ class CurrencyViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SelectView.layer.cornerRadius = 10
-        SelectView.layer.masksToBounds = true
+        makeRoundedAndShadowed(view: SelectView)
+        makeRoundedAndShadowed(view: convertButton)
+        makeRoundedAndShadowed(view: convertedAmountLabel)
+        makeRoundedAndShadowed(view: amountTextField)
         
         // Do any additional setup after loading the view.
         SelectView.delegate = self
@@ -32,7 +34,7 @@ class CurrencyViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         amountTextField.delegate = self
         convertButton.setTitle("Convert", for: .normal)
         convertedAmountLabel.text = ""
-    
+        
     downloadJSON {
                 self.currencies.sort { $0.code < $1.code }
                 self.SelectView.reloadAllComponents()
@@ -84,7 +86,7 @@ class CurrencyViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             }
 
             let convertedAmount = amount * selectedCurrency.rate
-            convertedAmountLabel.text = String(format: "%.4f", convertedAmount)
+            convertedAmountLabel.text = String(format: "%.2f", convertedAmount)
         }
 
         @objc func convertButtonPressed() {
@@ -124,4 +126,14 @@ class CurrencyViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                 }
             }.resume()
         }
+    
+    func makeRoundedAndShadowed(view: UIView) {
+        view.layer.cornerRadius = 20
+        view.layer.masksToBounds = true
+
+        view.layer.shadowColor = UIColor.darkGray.cgColor
+        view.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        view.layer.shadowOpacity = 0.9
+        view.layer.shadowRadius = 5.0
     }
+}

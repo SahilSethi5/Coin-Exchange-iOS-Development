@@ -18,6 +18,7 @@
 		3C0094862AFF25C100D4815D /* Coin_Exchange_Capstone_iOS_DevelopmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0094852AFF25C100D4815D /* Coin_Exchange_Capstone_iOS_DevelopmentUITestsLaunchTests.swift */; };
 		3C0094932AFF2A0900D4815D /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0094922AFF2A0900D4815D /* CurrencyViewController.swift */; };
 		3C0094952AFF2CD100D4815D /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0094942AFF2CD100D4815D /* Currency.swift */; };
+		3C46736C2B006DFF0088B97F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C46736B2B006DFF0088B97F /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		3C0094852AFF25C100D4815D /* Coin_Exchange_Capstone_iOS_DevelopmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin_Exchange_Capstone_iOS_DevelopmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3C0094922AFF2A0900D4815D /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 		3C0094942AFF2CD100D4815D /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		3C46736B2B006DFF0088B97F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				3C0094702AFF25C000D4815D /* Info.plist */,
 				3C0094922AFF2A0900D4815D /* CurrencyViewController.swift */,
 				3C0094942AFF2CD100D4815D /* Currency.swift */,
+				3C46736B2B006DFF0088B97F /* ProfileViewController.swift */,
 			);
 			path = "Coin Exchange Capstone iOS Development";
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C46736C2B006DFF0088B97F /* ProfileViewController.swift in Sources */,
 				3C0094672AFF25BF00D4815D /* ViewController.swift in Sources */,
 				3C0094952AFF2CD100D4815D /* Currency.swift in Sources */,
 				3C0094932AFF2A0900D4815D /* CurrencyViewController.swift in Sources */,

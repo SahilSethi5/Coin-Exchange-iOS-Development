@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,7 +14,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ury-uX-x8z">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="o0T-aw-ao0" kind="relationship" relationship="viewControllers" id="kcl-Au-Qdg"/>
@@ -27,11 +26,13 @@
             </objects>
             <point key="canvasLocation" x="-1155" y="265"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="mU3-db-ajo">
             <objects>
                 <navigationController id="D9p-rk-hKy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="cs4-ou-xYI"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.crop.circle" catalog="system" landscapeImage="profile-2" largeContentSizeImage="profile-2" id="cs4-ou-xYI">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fEJ-8U-9fV">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -44,11 +45,11 @@
             </objects>
             <point key="canvasLocation" x="-1156" y="994"/>
         </scene>
-        <!--Item-->
+        <!--Exchange-->
         <scene sceneID="TSy-xv-w5w">
             <objects>
                 <navigationController id="o0T-aw-ao0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="1O7-9a-zyU"/>
+                    <tabBarItem key="tabBarItem" title="Exchange" image="dollarsign.arrow.circlepath" catalog="system" landscapeImage="dollarsign.arrow.circlepath" largeContentSizeImage="dollarsign.arrow.circlepath" id="1O7-9a-zyU"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NRA-jw-4AU">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -74,24 +75,21 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90311417845815556" green="0.98431372640000003" blue="0.9801721169108546" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </pickerView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6a6-1f-sye">
-                                <rect key="frame" x="105" y="530" width="182" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6a6-1f-sye">
+                                <rect key="frame" x="105" y="528" width="182" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1R-Od-BeV">
-                                <rect key="frame" x="112" y="632" width="168" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJG-4U-0Bu">
-                                <rect key="frame" x="125" y="572" width="142" height="73"/>
+                                <rect key="frame" x="105" y="604" width="182" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <backgroundConfiguration key="background" cornerRadius="12">
+                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                        <color key="strokeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
@@ -107,6 +105,16 @@
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1R-Od-BeV">
+                                <rect key="frame" x="105" y="679" width="182" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Ae-B8-5F9"/>
@@ -125,11 +133,11 @@
             </objects>
             <point key="canvasLocation" x="-1900" y="1678.8732394366198"/>
         </scene>
-        <!--Item-->
+        <!--Currencies-->
         <scene sceneID="YNF-2n-frS">
             <objects>
                 <navigationController id="VfU-6Z-2ih" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ILj-lk-G04"/>
+                    <tabBarItem key="tabBarItem" title="Currencies" image="dollarsign" catalog="system" landscapeImage="currency-2" largeContentSizeImage="currency-2" id="ILj-lk-G04"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oQZ-He-j0G">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -142,30 +150,81 @@
             </objects>
             <point key="canvasLocation" x="-399" y="994"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="51A-Iu-eDH">
             <objects>
-                <viewController id="kPr-vn-3Rc" sceneMemberID="viewController">
+                <viewController id="kPr-vn-3Rc" customClass="ProfileViewController" customModule="Coin_Exchange_Capstone_iOS_Development" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HxK-Px-4Gb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snu-h9-H8l">
-                                <rect key="frame" x="113" y="103" width="167" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snu-h9-H8l">
+                                <rect key="frame" x="151.33333333333334" y="115.99999999999999" width="90.666666666666657" height="33.333333333333329"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_kids_avatar_user_profile_icon_149314" translatesAutoresizingMaskIntoConstraints="NO" id="z2l-or-bp6">
+                                <rect key="frame" x="49.666666666666657" y="157.33333333333334" width="294" height="189.00000000000003"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="189" id="qjl-CU-019"/>
+                                    <constraint firstAttribute="width" constant="294" id="sPf-OV-ECl"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="oZh-Xs-BgH">
+                                <rect key="frame" x="67" y="386.33333333333337" width="259.33333333333331" height="288.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sahil Sethi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgH-FQ-Dbi">
+                                        <rect key="frame" x="0.0" y="0.0" width="259.33333333333331" height="23.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sahil123@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSE-OZ-YSZ">
+                                        <rect key="frame" x="0.0" y="88.333333333333371" width="259.33333333333331" height="23.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Preferred Currency: USD " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBs-hz-A4u">
+                                        <rect key="frame" x="0.0" y="176.66666666666669" width="259.33333333333331" height="23.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Account Balance: 9960$  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7E-Ml-cnW">
+                                        <rect key="frame" x="0.0" y="265.00000000000006" width="259.33333333333331" height="23.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8125573358" green="0.98431372640000003" blue="0.97083573170000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="qgH-FQ-Dbi" firstAttribute="top" secondItem="oZh-Xs-BgH" secondAttribute="top" id="320-rm-bsa"/>
+                                    <constraint firstAttribute="bottom" secondItem="k7E-Ml-cnW" secondAttribute="bottom" id="dXe-Z0-peB"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="x5R-kh-zvq"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" red="0.66274511810000003" green="0.93725490570000003" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="z2l-or-bp6" firstAttribute="top" secondItem="snu-h9-H8l" secondAttribute="bottom" constant="8" symbolic="YES" id="41u-Lt-eEq"/>
+                            <constraint firstItem="snu-h9-H8l" firstAttribute="centerX" secondItem="HxK-Px-4Gb" secondAttribute="centerX" id="HlD-w8-7fY"/>
+                            <constraint firstItem="oZh-Xs-BgH" firstAttribute="centerX" secondItem="HxK-Px-4Gb" secondAttribute="centerX" id="OMZ-4H-1B5"/>
+                            <constraint firstItem="snu-h9-H8l" firstAttribute="top" secondItem="HxK-Px-4Gb" secondAttribute="topMargin" constant="13" id="aH4-jD-DkC"/>
+                            <constraint firstItem="z2l-or-bp6" firstAttribute="centerX" secondItem="HxK-Px-4Gb" secondAttribute="centerX" id="fgs-WS-ySn"/>
+                            <constraint firstItem="oZh-Xs-BgH" firstAttribute="top" secondItem="z2l-or-bp6" secondAttribute="bottom" constant="40" id="xr5-oA-tl4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FLw-38-E4m"/>
+                    <connections>
+                        <outlet property="Stackview" destination="oZh-Xs-BgH" id="lf3-tB-qdu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Clp-to-ega" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1156" y="1679"/>
+            <point key="canvasLocation" x="-1156.4885496183206" y="1678.8732394366198"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bpU-2k-neM">
@@ -184,9 +243,9 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="zy8-Ki-YmS"/>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Currencies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6l-Cl-nZz">
-                                <rect key="frame" x="138" y="86" width="118" height="30"/>
+                                <rect key="frame" x="124" y="86" width="148" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="27"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -224,9 +283,16 @@
             <point key="canvasLocation" x="-399.23664122137404" y="1678.8732394366198"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="currency-2" width="32" height="32"/>
+        <image name="dollarsign" catalog="system" width="89" height="128"/>
+        <image name="dollarsign.arrow.circlepath" catalog="system" width="128" height="112"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
+        <image name="profile-2" width="32" height="32"/>
+        <image name="user_kids_avatar_user_profile_icon_149314" width="512" height="512"/>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
