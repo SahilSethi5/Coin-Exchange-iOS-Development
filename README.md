@@ -82,9 +82,7 @@ Coin Exchange is an app that lets you convert a currency from many different cur
 
 ## Video Walkthrough
 
-# <img alt="YAP" src="http://i.imgur.com/dNYswmI.gif">
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/XDjNweK"><a href="//imgur.com/XDjNweK"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ## Schema 
 
