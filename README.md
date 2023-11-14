@@ -32,29 +32,32 @@ Coin Exchange is an app that lets you convert a currency from many different cur
 
 **Required Must-have Stories**
 
-* User must be able to convert currency from USD to EUR.
-* User must be able to see the conversion rate for different currencies.
-* User must be able to convert currency from USD to multiple different currencies.
-* User must be able to view account balance and convert currencies by using that.
+- [x] User must be able to convert currency from USD to EUR.
+- [x] User must be able to see the conversion rate for different currencies.
+- [x] User must be able to convert currency from USD to multiple different currencies.
+- [x] User must be able to view profile and access multiple screens by using the tab bar.
 
 **Optional Nice-to-have Stories**
 
-* User must have a profile and must be able to view the profile.
+* User must have an account balance and must be able to use that.
 * User must be able to switch from Light Mode to Dark Mode.
 * User must be able to view currency news.
 
 ### Sprints
 
 * Sprint 1: Set up the project and make basic view controllers.
-* Sprint 2: Can switch to different screens like currencies, profile, and convert.
+* Sprint 2: User can switch to different screens like currencies, profile, and convert.
+* Sprint 3: User can convert currency from USD to multiple different currencies. The data is fetched from an API.
+* Sprint 4: Different screens like the currency, profile, and convert screen all have functionality and UI elements. User can view the exchange rate from 1 USD to              multiple currencies on the currency tab.
+* Sprint 5: Improved the UI and changed different colors and styling along with adding rounded edges to some elements.
 
 ### 2. Screen Archetypes
 
-- [ ] Currency Conversion Screen.
+- [x] Currency Conversion Screen.
 * User can view the conversion screen and use the converter.
-- [ ] Profile Screen.
+- [x] Profile Screen.
 * User can see their profile and account balance.
-- [ ] Currency Rate Screen.
+- [x] Currency Rate Screen.
 * User can see different currencies and their current rate.
  
 ### 3. Navigation
@@ -79,14 +82,14 @@ Coin Exchange is an app that lets you convert a currency from many different cur
 
 ## Schema 
 
-[This section will be completed in Unit 9]
+Currency: code, rate.
+ExchangeRate: base_code, conversion_rates.
 
 ### Models
 
-[Add table of models]
+Currency
 
 ### Networking
 
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- Uses an API on 2 screens, convert screen and currency screen to get information about converting currencies from USD to selected currency.
+- The API request returns multiple currencies and also the conversion rate for the currencies.
