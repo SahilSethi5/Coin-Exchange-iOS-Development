@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -285,11 +286,11 @@
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
-        <image name="currency-2" width="32" height="32"/>
+        <image name="currency-2" width="128" height="128"/>
         <image name="dollarsign" catalog="system" width="89" height="128"/>
         <image name="dollarsign.arrow.circlepath" catalog="system" width="128" height="112"/>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
-        <image name="profile-2" width="32" height="32"/>
+        <image name="profile-2" width="128" height="128"/>
         <image name="user_kids_avatar_user_profile_icon_149314" width="512" height="512"/>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
