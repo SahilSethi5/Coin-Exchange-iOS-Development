@@ -80,6 +80,10 @@ Coin Exchange is an app that lets you convert a currency from many different cur
 
 <img src="https://github.com/SahilSethi5/iOS-Development-Capstone/blob/main/IMG_5876.jpeg" width=600>
 
+## Video Walkthrough
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/XDjNweK" data-context="false" ><a href="//imgur.com/a/XDjNweK"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 ## Schema 
 
 Currency: code, rate.
