@@ -82,7 +82,7 @@ Coin Exchange is an app that lets you convert a currency from many different cur
 
 ## Video Walkthrough
 
-
+https://github.com/SahilSethi5/Coin-Exchange-Capstone-iOS-Development/blob/main/ezgif-1-8694be791f.gif
 
 ## Schema 
 
