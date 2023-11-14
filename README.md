@@ -91,7 +91,7 @@ ExchangeRate: base_code, conversion_rates.
 
 ### Models
 
-Currency
+Currency.
 
 ### Networking
 
